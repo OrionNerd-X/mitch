@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaTrack Dashboard</title>
+    <link rel="stylesheet" href="./styles/dashboard.css">
+    <link rel="stylesheet" href="./styles/sidebar.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sideBar">
+            <h2>NovaTrack</h2>
+            <span class="close" id="closeSideBar">X</span>
+            <nav>
+                <ul>
+                    <li><a href="./dashboard.html">🏠 Dashboard</a></li>
+                    <li><a href="./tasks.html">📋 Tasks</a></li>
+                    <li><a href="#">🏆 Leaderboard</a></li>
+                    <li><a href="./activity.html">📊 Activity</a></li>
+                    <li><a href="./settings.html">⚙️ Settings</a></li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <header>
+                <div class="burger" id="openSideBar">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <h1>Leaderboard</h1>
+            </header>
+            
+            <section class="widgets">
+                <div class="widget">🔥 Active Tasks <span>5</span></div>
+                <div class="widget">✅ Completed <span>12</span></div>
+                <div class="widget">⚠️ Overdue <span>2</span></div>
+            </section>
+        
+        </main>
+    </div>
+
+    <script src="./scripts/sidebar.js" ></script>
+</body>
+</html>

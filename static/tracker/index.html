@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaTrack - Track. Collaborate. Succeed.</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <!-- Landing Page -->
+    <header class="hero">
+        <h1>NovaTrack</h1>
+        <p>Track. Collaborate. Succeed.</p>
+        <a href="#auth" class="cta-btn">Get Started</a>
+    </header>
+    
+    <section class="features">
+        <h2>Why NovaTrack?</h2>
+        <div class="feature-box">
+            <div class="feature">
+                <h3>🔥 Real-Time Tracking</h3>
+                <p>Stay updated with team progress instantly.</p>
+            </div>
+            <div class="feature">
+                <h3>🏆 Leaderboard System</h3>
+                <p>Compete, collaborate, and boost productivity.</p>
+            </div>
+            <div class="feature">
+                <h3>📢 Smart Notifications</h3>
+                <p>Get notified on task updates and deadlines.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Authentication Container -->
+    <section id="auth" class="auth-container">
+        <div class="toggle-container">
+            <button class="toggle-btn active" id="toggleLogin">Login</button>
+            <button class="toggle-btn" id="toggleSignup">Sign Up</button>
+        </div>
+        
+        <div class="auth-box" id="loginBox">
+            <h2>Login</h2>
+            <input type="email" id="loginEmail" placeholder="Email">
+            <input type="password" id="loginPassword" placeholder="Password">
+            <button id="loginButton">Login</button>
+        </div>
+    
+        <div class="auth-box" id="signupBox" style="display: none;">
+            <h2>Sign Up</h2>
+            <input type="text" id="signupName" placeholder="Full Name">
+            <input type="email" id="signupEmail" placeholder="Email">
+            <input type="password" id="signupPassword" placeholder="Password">
+            <a href="/dashboard.html">
+                <button id="signupButton">Sign Up</button>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 OrionNerd_X. All rights reserved.</p>
+    </footer>
+    
+    <script src="./scripts/script.js" ></script>
+</body>
+</html>

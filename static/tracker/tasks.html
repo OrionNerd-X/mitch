@@ -1,0 +1,106 @@
+<!-- NovaTrack - Tasks Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks | NovaTrack</title>
+    <link rel="stylesheet" href="./styles/tasks.css">
+    <link rel="stylesheet" href="./styles/sidebar.css">
+</head>
+<body>
+    <div class="dashboard-container">
+      <!-- Sidebar -->
+      <aside class="sidebar" id="sideBar">
+        <h2>NovaTrack</h2>
+        <span class="close" id="closeSideBar">X</span>
+        <nav>
+            <ul>
+                <li><a href="./dashboard.html">🏠 Dashboard</a></li>
+                <li><a href="#">📋 Tasks</a></li>
+                <li><a href="./leaderboard.html">🏆 Leaderboard</a></li>
+                <li><a href="./activity.html">📊 Activity</a></li>
+                <li><a href="./settings.html">⚙️ Settings</a></li>
+            </ul>
+        </nav>
+    </aside>
+    
+    <!-- Main Content -->
+    <main class="main-content">
+        <header>
+            <div class="burger" id="openSideBar">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <h1>Welcome, Orion Nova</h1>
+        </header>
+            <!-- Task Controls -->
+            <div class="task-controls">
+                <button class="add-task" id="addTask"><span>➕</span> Add Task</button>
+                <input type="text" class="search-tasks" placeholder="🔍 Search tasks...">
+            </div>
+
+            <!-- Popup -->
+             <div class="alert-wrap">
+                
+             </div>
+            
+            <!-- Task Form -->
+            <div class="form-wrap" id="addTaskForm">
+                <button id="closeTaskForm">X</button>
+                <h2>Add Task</h2>
+                <form class="task-form" id="taskForm">
+                        <input type="text" placeholder="Task Title" required>
+                        <textarea placeholder="Task Description" required></textarea>
+                        <div class="wrap">
+                            <label for="task-date">Completion Date:</label>
+                            <input type="date" id="task-date" required>
+                        </div>
+                        <div class="wrap">
+                            <label for="task-priority">Priority:</label>
+                        <select id="task-priority" required>
+                            <option value="high">🔥 High</option>
+                            <option value="medium">⚡ Medium</option>
+                            <option value="low">🌱 Low</option>
+                        </select>
+                        </div>
+                    <button type="submit">✅ Add Task</button>
+                </form>
+            </div>
+            
+            <!-- Tasks List -->
+            <section class="tasks-list">
+                <h2>Your Tasks</h2>
+                <ul class="task-list">
+                    <li class="task-item">
+                        <span class="task-title">✅ Complete UI redesign</span>
+                        <span class="status completed">Completed</span>
+                        <span class="task-date">📅 2025-03-07</span>
+                        <span class="task-priority high">🔥 High</span>
+                        <button class="edit-task">✏️</button>
+                        <button class="delete-task">🗑️</button>
+                    </li>
+                    <li class="task-item">
+                        <span class="task-title">⏳ Integrate notifications</span>
+                        <span class="status in-progress">In Progress</span>
+                        <span class="task-date">📅 2025-03-10</span>
+                        <span class="task-priority medium">⚡ Medium</span>
+                        <button class="edit-task">✏️</button>
+                        <button class="delete-task">🗑️</button>
+                    </li>
+                    <li class="task-item overdue">
+                        <span class="task-title">⚠️ Fix overdue tasks</span>
+                        <span class="status overdue">Overdue</span>
+                        <span class="task-date">📅 2025-03-05</span>
+                        <span class="task-priority low">🌱 Low</span>
+                        <button class="edit-task">✏️</button>
+                        <button class="delete-task">🗑️</button>
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </div>
+    <script src="./scripts/sidebar.js"></script>
+</body>
+</html>
